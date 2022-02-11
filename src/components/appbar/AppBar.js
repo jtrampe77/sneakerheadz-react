@@ -3,6 +3,7 @@ import {AppBarStyles, AppBarItems, AppBarItem, AppBarDiv} from './styles'
 import {IconButton} from './../../ui/buttons'
 import {IoIosNotificationsOutline} from 'react-icons/io'
 import {BsPersonCircle} from 'react-icons/bs'
+import {FiSettings} from 'react-icons/fi'
 
 function AppBar(props) {
   return (
@@ -20,6 +21,11 @@ function AppBar(props) {
                 <AppBarItem>
                   <IconButton><BsPersonCircle color='red' size="2rem"/></IconButton>
                 </AppBarItem>
+
+                <AppBarItem>
+                  <IconButton><FiSettings color='red' size="2rem"/></IconButton>
+                </AppBarItem>
+
               </AppBarDiv>
             
         </AppBarItems>
