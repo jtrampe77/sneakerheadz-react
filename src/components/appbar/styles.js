@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 const AppBarStyles = styled.nav`
-box-shadow: 0 0 2px 1px grey;
-padding: 1rem 4rem;
-background-color: black;
-
+  padding: 1rem 4rem;
+  background-color: black;
+  position: sticky;
+  top: 0%;
 `;
 
 const AppBarItems = styled.ul`
