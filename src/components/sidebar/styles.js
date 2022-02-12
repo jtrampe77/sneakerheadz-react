@@ -3,7 +3,11 @@ import styled from "styled-components";
 const SideBarStyles = styled.div`
   
  border-right:1px solid black;
- height: 100vh;
+
+ @media screen and (min-width:900px){
+  height: 100vh;
+ }
+
 
 `;
 
