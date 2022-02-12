@@ -25,5 +25,12 @@ const AppBarDiv = styled.div`
   
 `;
 
+const AppBarImg =styled.img`
+  width:70%;
+  @media screen and (min-width:900px) {
+    width:20%;
+  }
+`;
 
-export {AppBarStyles, AppBarItems, AppBarItem, AppBarDiv}
+
+export {AppBarStyles, AppBarItems, AppBarItem, AppBarDiv,AppBarImg}

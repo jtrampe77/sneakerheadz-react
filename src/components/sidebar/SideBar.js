@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+import {SideBarStyles} from '../sidebar/styles'
 
 function SideBar() {
   return (
-    <div>SideBar</div>
+    <SideBarStyles>
+      sidebar
+    </SideBarStyles>
   )
 }
 

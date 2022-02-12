@@ -1,8 +1,11 @@
 import React from 'react'
+import { FootBarStyles } from './styles'
 
 function FootBar() {
   return (
-    <div>FootBar</div>
+    <FootBarStyles>
+      footer
+    </FootBarStyles>
   )
 }
 
