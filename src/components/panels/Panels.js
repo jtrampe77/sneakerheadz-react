@@ -2,7 +2,9 @@ import React from 'react'
 
 function Panels() {
   return (
-    <div>Panels</div>
+    <div>
+      <h3>Panels</h3>
+    </div>
   )
 }
 
