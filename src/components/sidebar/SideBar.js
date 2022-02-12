@@ -1,10 +1,16 @@
 import React from 'react';
-import {SideBarStyles} from '../sidebar/styles'
+import {SideBarStyles,SideBarItems,SideBarItem} from '../sidebar/styles'
 
 function SideBar() {
   return (
     <SideBarStyles>
-      sidebar
+      <SideBarItems>
+        <SideBarItem>Home</SideBarItem>
+        <SideBarItem>Add Sneakerz</SideBarItem>
+        <SideBarItem>Account</SideBarItem>
+        <SideBarItem>About</SideBarItem>
+        <SideBarItem>Contact</SideBarItem>
+      </SideBarItems>
     </SideBarStyles>
   )
 }
