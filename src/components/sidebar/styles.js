@@ -2,16 +2,32 @@ import styled from "styled-components";
 
 const SideBarStyles = styled.div`
   
-  box-shadow: 2px 2px 4px 0 #000;
-  padding: 2rem 4rem;
+ border-right:1px solid black;
+ height: 100vh;
+
 `;
 
 const SideBarItems = styled.ul`
-  
+ 
 `;
 
 const SideBarItem = styled.li`
-  
+  padding: 2rem 2rem;
+  display:flex;
+  align-items:center;
+
+  &:hover{
+    background-color:black;
+    color: red;
+    font-weight: bold;
+  }
+
+
 `;
 
-export {SideBarStyles,SideBarItems,SideBarItem}
+const SideBarItemName = styled.span`
+  margin-left:2rem;
+  margin-right:2rem;
+`
+
+export {SideBarStyles,SideBarItems,SideBarItem, SideBarItemName}

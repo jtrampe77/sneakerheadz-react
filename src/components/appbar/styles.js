@@ -18,6 +18,11 @@ const AppBarItems = styled.ul`
 const AppBarItem = styled.li`
   color: white;
   margin-right:1rem;
+
+  &:hover{
+    color:red;
+  }
+  
 `;
 
 const AppBarDiv = styled.div`

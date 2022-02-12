@@ -8,4 +8,9 @@ const FootBarStyles = styled.footer`
   color: white;
 `;
 
-export {FootBarStyles}
+const FootBarImg = styled.img`
+  width:3%;
+  margin: 1rem 3rem;
+`
+
+export {FootBarStyles, FootBarImg}

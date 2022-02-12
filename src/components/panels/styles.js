@@ -4,11 +4,10 @@ const PanelsStyles = styled.div`
     width: 90%;
     margin: 3rem auto;
  @media screen and (min-width:900px) {
-        
         display: flex;
         flex-wrap: wrap;
         gap: 3rem;
-        margin: 0;
+        margin: 5rem 0;
  }
 `
 

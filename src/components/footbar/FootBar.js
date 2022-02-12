@@ -1,10 +1,12 @@
 import React from 'react'
-import { FootBarStyles } from './styles'
+import { FootBarStyles, FootBarImg } from './styles'
+import logo from '../../img/logo.png'
 
 function FootBar() {
   return (
     <FootBarStyles>
-      footer
+      <FootBarImg src={logo} alt="Logo"/>
+      Copyrights 2022
     </FootBarStyles>
   )
 }
