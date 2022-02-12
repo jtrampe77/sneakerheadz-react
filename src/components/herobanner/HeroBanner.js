@@ -4,7 +4,7 @@ import {HeroBannerStyles} from './styles'
 function HeroBanner() {
   return (
     <HeroBannerStyles>
-        Hero Banner Image
+      
     </HeroBannerStyles>
   )
 }
