@@ -9,8 +9,13 @@ const FootBarStyles = styled.footer`
 `;
 
 const FootBarImg = styled.img`
-  width:3%;
   margin: 1rem 3rem;
+  width: 10%;
+  @media screen and (min-width:900px){
+    width:3%;
+  }
+
+
 `
 
 export {FootBarStyles, FootBarImg}
