@@ -19,6 +19,9 @@ const SideBarItem = styled.li`
   padding: 2rem 2rem;
   display:flex;
   align-items:center;
+  color: black;
+  text-decoration:none;
+  
 
   &:hover{
     background-color:black;

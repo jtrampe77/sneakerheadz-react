@@ -4,6 +4,7 @@ import LoginPage from "./pages/LoginPage";
 import {AppBar} from "./components/appbar";
 import { FootBar } from "./components/footbar";
 import { HeroBanner } from "./components/herobanner";
+import AboutUsPage from "./pages/AboutUsPage";
 
 function App() {
  
@@ -19,6 +20,10 @@ function App() {
 
         <Route path="/login">
           <LoginPage />
+        </Route>
+
+        <Route path="/about">
+          <AboutUsPage />
         </Route>
 
 

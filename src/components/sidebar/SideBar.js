@@ -5,6 +5,7 @@ import {MdManageAccounts} from 'react-icons/md'
 import {BiInfoCircle} from 'react-icons/bi'
 import {BsFillTelephoneFill} from 'react-icons/bs'
 import {IoIosArrowForward} from 'react-icons/io'
+import {Link} from 'react-router-dom'
 
 function SideBar() {
   return (
@@ -24,11 +25,13 @@ function SideBar() {
           <IoIosArrowForward />
         </SideBarItem>
 
-        <SideBarItem>
-          <BiInfoCircle size="1.5rem"/>
-          <SideBarItemName>About</SideBarItemName>
-          <IoIosArrowForward />
-        </SideBarItem>
+        <Link to="/about">
+          <SideBarItem>
+            <BiInfoCircle size="1.5rem"/>
+            <SideBarItemName>About</SideBarItemName>
+            <IoIosArrowForward />
+          </SideBarItem>
+        </Link>
 
         <SideBarItem>
           <BsFillTelephoneFill size="1.5rem"/>
