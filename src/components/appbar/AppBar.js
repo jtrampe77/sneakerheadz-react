@@ -22,7 +22,7 @@ function AppBar(props) {
               <AppBarDiv>
                 
                 <AppBarItem>
-                    <a href="#"><IoIosNotificationsOutline color='white' size="2rem"/></a> 
+                    <IoIosNotificationsOutline color='white' size="2rem"/>
                 </AppBarItem>
 
                 <AppBarItem>
@@ -30,7 +30,7 @@ function AppBar(props) {
                 </AppBarItem>
 
                 <AppBarItem>
-                  <a href="#"><FiSettings color='white' size="2rem"/></a>
+                  <FiSettings color='white' size="2rem"/>
                 </AppBarItem>
 
               </AppBarDiv>
