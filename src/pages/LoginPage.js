@@ -7,9 +7,9 @@ import {HeroBanner} from './../components/herobanner'
 function LoginPage(props) {
   return (
     <>
-      <AppBar />
-      <HeroBanner />
-      <FootBar />
+
+    
+
     </>
   )
 }

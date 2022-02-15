@@ -11,10 +11,7 @@ function DashBoardPage(props) {
   
   return (
     <>
-      <AppBar />
-      <HeroBanner />
       <StoreFront />
-      <FootBar />
     </>
      
   )

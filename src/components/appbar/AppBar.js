@@ -1,10 +1,11 @@
 import React from 'react'
-import {AppBarStyles, AppBarItems, AppBarItem, AppBarDiv, AppBarImg} from './styles'
+import {AppBarStyles, AppBarItems, AppBarItem, AppBarDiv, AppBarImg, AppBarLink} from './styles'
 import {IconButton} from './../../ui/buttons'
 import {IoIosNotificationsOutline} from 'react-icons/io'
 import {BsPersonCircle} from 'react-icons/bs'
 import {FiSettings} from 'react-icons/fi'
 import logo from '../../img/logo.png'
+import {Link} from 'react-router-dom'
 
 function AppBar(props) {
 
@@ -14,21 +15,23 @@ function AppBar(props) {
         <AppBarItems>
 
             <AppBarItem>
-              <AppBarImg src={logo} alt="Logo"/>
+              <Link to="/">
+                <AppBarImg src={logo} alt="Logo"/>
+              </Link>
             </AppBarItem>
 
               <AppBarDiv>
                 
                 <AppBarItem>
-                    <IconButton><IoIosNotificationsOutline color='white' size="2rem"/></IconButton> 
+                    <a href=""><IoIosNotificationsOutline color='white' size="2rem"/></a> 
                 </AppBarItem>
 
                 <AppBarItem>
-                  <IconButton><BsPersonCircle color='white' size="2rem"/></IconButton>
+                  <Link to="/login"><BsPersonCircle color='white' size="2rem"/></Link>
                 </AppBarItem>
 
                 <AppBarItem>
-                  <IconButton><FiSettings color='white' size="2rem"/></IconButton>
+                  <a href=""><FiSettings color='white' size="2rem"/></a>
                 </AppBarItem>
 
               </AppBarDiv>

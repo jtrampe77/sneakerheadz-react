@@ -18,12 +18,14 @@ const AppBarItems = styled.ul`
 const AppBarItem = styled.li`
   color: white;
   margin-right:1rem;
-
-  &:hover{
-    color:red;
-  }
+  padding:0 1rem;
   
 `;
+
+const AppBarLink = styled.a`
+    color: white;
+    padding:0 3rem;
+`
 
 const AppBarDiv = styled.div`
   display:flex;
@@ -38,4 +40,4 @@ const AppBarImg =styled.img`
 `;
 
 
-export {AppBarStyles, AppBarItems, AppBarItem, AppBarDiv,AppBarImg}
+export {AppBarStyles, AppBarItems, AppBarItem, AppBarDiv,AppBarImg, AppBarLink}
