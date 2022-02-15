@@ -29,9 +29,9 @@ const AboutInfoDiv = styled.div`
 `
 
 const AboutHeader = styled.h2`
-  font-size:2rem;
+  font-size:3rem;
   text-align:center;
-  margin:2rem 0;
+  margin:5rem 0;
   font-weight:bold;
    
 `
