@@ -22,10 +22,6 @@ const AppBarItem = styled.li`
   
 `;
 
-const AppBarLink = styled.a`
-    color: white;
-    padding:0 3rem;
-`
 
 const AppBarDiv = styled.div`
   display:flex;
@@ -40,4 +36,4 @@ const AppBarImg =styled.img`
 `;
 
 
-export {AppBarStyles, AppBarItems, AppBarItem, AppBarDiv,AppBarImg, AppBarLink}
+export {AppBarStyles, AppBarItems, AppBarItem, AppBarDiv,AppBarImg, }

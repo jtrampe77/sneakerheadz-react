@@ -1,6 +1,5 @@
 import React from 'react'
-import {AppBarStyles, AppBarItems, AppBarItem, AppBarDiv, AppBarImg, AppBarLink} from './styles'
-import {IconButton} from './../../ui/buttons'
+import {AppBarStyles, AppBarItems, AppBarItem, AppBarDiv, AppBarImg} from './styles'
 import {IoIosNotificationsOutline} from 'react-icons/io'
 import {BsPersonCircle} from 'react-icons/bs'
 import {FiSettings} from 'react-icons/fi'
