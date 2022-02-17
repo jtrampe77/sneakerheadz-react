@@ -1,6 +1,6 @@
 import React from 'react'
-import {StoreFront} from './../components/storefront'
-
+import {StoreFront} from './../../components/storefront'
+import {HeroBanner} from '../../components/herobanner'
 
 
 function DashBoardPage(props) {
@@ -9,6 +9,7 @@ function DashBoardPage(props) {
   
   return (
     <>
+      <HeroBanner />
       <StoreFront />
     </>
      

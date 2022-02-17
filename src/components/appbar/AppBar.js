@@ -14,9 +14,9 @@ function AppBar(props) {
         <AppBarItems>
 
             <AppBarItem>
-              <Link to="/">
+             
                 <AppBarImg src={logo} alt="Logo"/>
-              </Link>
+             
             </AppBarItem>
 
               <AppBarDiv>

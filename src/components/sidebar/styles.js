@@ -4,6 +4,7 @@ const SideBarStyles = styled.div`
   
  border-right:1px solid black;
 
+
  @media screen and (min-width:900px){
   height: 100vh;
  }
