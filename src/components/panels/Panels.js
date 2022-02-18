@@ -1,69 +1,25 @@
 import React from 'react'
-import {PanelsStyles, Panel} from '../panels/styles'
+import {PanelsStyles, Panel,PanelHeading} from '../panels/styles'
 
 function Panels() {
   return (
-    
-    <PanelsStyles>
+    <>
+    <PanelHeading>Sneakerz Listing</PanelHeading>
 
-     <Panel>
-     <h3>J1 Banned</h3>
-     <p>Size</p>
-     <p>Price</p>
-     </Panel>
+     <PanelsStyles>
 
-     <Panel>
-     <h3>J1 Banned</h3>
-     <p>Size</p>
-     <p>Price</p>
-     </Panel>
+      <Panel>
+      <p>Image</p>
+      <h3>J1 Banned</h3>
+      <p>Size</p>
+      <p>Price</p>
+      </Panel>
+   
 
-
-     <Panel>
-     <h3>J1 Banned</h3>
-     <p>Size</p>
-     <p>Price</p>
-     </Panel>
-
-
-     <Panel>
-     <h3>J1 Banned</h3>
-     <p>Size</p>
-     <p>Price</p>
-     </Panel>
-
-
-     <Panel>
-     <h3>J1 Banned</h3>
-     <p>Size</p>
-     <p>Price</p>
-     </Panel>
-
-
-     <Panel>
-     <h3>J1 Banned</h3>
-     <p>Size</p>
-     <p>Price</p>
-     </Panel>
-
-
-     <Panel>
-     <h3>J1 Banned</h3>
-     <p>Size</p>
-     <p>Price</p>
-     </Panel>
-
-     <Panel>
-     <h3>J1 Banned</h3>
-     <p>Size</p>
-     <p>Price</p>
-     </Panel>
-
-
-
-    
     </PanelsStyles>
-      
+ 
+    </>
+   
   )
 }
 

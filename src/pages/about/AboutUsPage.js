@@ -1,12 +1,25 @@
 import React from 'react'
 import AboutUs from '../../components/about/AboutUs'
 import SideBar from '../../components/sidebar/SideBar'
+import { StoreFrontStyles } from '../../components/storefront/styles'
+import {HeroBanner} from '../../components/herobanner'
+
 
 function AboutUsPage(props){
     return(
         <>
-            <SideBar />
-            <AboutUs />
+        <HeroBanner />
+        <StoreFrontStyles>
+            <div>
+                <SideBar />
+            </div>
+
+            <div>
+                <AboutUs />
+            </div>
+          
+        </StoreFrontStyles>
+           
         </>
     )
 }

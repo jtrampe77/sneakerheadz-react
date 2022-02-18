@@ -19,6 +19,24 @@ const PageTagline = styled.h2`
     text-align: center;
 `;
 
+const BackToHomeButton = styled.button`
+  padding:1rem 2rem;
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+  text-align:center;
+  margin-top:3rem;
+
+  &:hover{
+      background-color:red;
+      font-weight:bold;  
+      box-shadow: 0 2px 4px 0 black;
+  }
+`;
+
+const PageDiv = styled.div`
+  text-align:center;
+`;
 
 
-export {PageNotFoundContainer,PageHeader,PageTagline}
+export {PageNotFoundContainer,PageHeader,PageTagline,BackToHomeButton,PageDiv}

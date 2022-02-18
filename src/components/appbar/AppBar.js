@@ -22,15 +22,15 @@ function AppBar(props) {
               <AppBarDiv>
                 
                 <AppBarItem>
-                    <IoIosNotificationsOutline color='white' size="2rem"/>
+                <Link to="/notifications"><IoIosNotificationsOutline color='white' size="2rem"/></Link>
                 </AppBarItem>
 
                 <AppBarItem>
-                  <Link to="/login"><BsPersonCircle color='white' size="2rem"/></Link>
+                  <Link to="/account"><BsPersonCircle color='white' size="2rem"/></Link>
                 </AppBarItem>
 
                 <AppBarItem>
-                  <FiSettings color='white' size="2rem"/>
+                <Link to="/settings"><FiSettings color='white' size="2rem"/></Link>
                 </AppBarItem>
 
               </AppBarDiv>
