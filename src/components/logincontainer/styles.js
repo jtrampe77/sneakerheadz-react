@@ -64,6 +64,11 @@ const LoginInputContainer = styled.div`
   margin: 2rem 0;
 `;
 
+const ForgotPassword = styled.p`
+  color: #0059ff;
+  margin-top:4rem;
+`;
 
 
-export {LoginImageContainer,LoginPanel,LoginHeader,LoginTagline,LoginForm,ImagePanel,LoginImage,LoginSubmitButton, LoginFormInput, LoginFormLabel,LoginInputContainer}
+
+export {LoginImageContainer,LoginPanel,LoginHeader,LoginTagline,LoginForm,ImagePanel,LoginImage,LoginSubmitButton, LoginFormInput, LoginFormLabel,LoginInputContainer,ForgotPassword}

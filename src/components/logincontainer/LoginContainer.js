@@ -1,6 +1,6 @@
 import React from 'react'
-import {LoginImageContainer,LoginPanel,LoginHeader,LoginTagline,LoginForm,LoginImage, ImagePanel,LoginSubmitButton, LoginFormLabel, LoginFormInput,LoginInputContainer} from './styles'
-import { useNavigate } from 'react-router-dom';
+import {LoginImageContainer,LoginPanel,LoginHeader,LoginTagline,LoginForm,LoginImage, ImagePanel,LoginSubmitButton, LoginFormLabel, LoginFormInput,LoginInputContainer,ForgotPassword} from './styles'
+import { Link, useNavigate } from 'react-router-dom';
 import sneakersImage from '../../img/LoginPageImg.jpg'
 
 function LoginContainer(){
@@ -36,6 +36,12 @@ function LoginContainer(){
                     </div>
                    
                   </LoginForm>
+
+            <Link to='/'>
+            <ForgotPassword>Forgot Password?</ForgotPassword>
+            </Link>
+            
+                  
 
               </LoginPanel>
 
