@@ -1,28 +1,27 @@
-# React Starter Kit
+# SneakerHeadz
+The Only Sneakerz Store You Need
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br>
 
-# Scripts
+## What We Are About
+SneakerHeadz is all about getting rare, limited-only, best of sneakers and reselling them for other sneakerheadz to enjoy. We are dedicated resellers that are always up to date to what is the latest in the sneaker industry.
 
-__Development Build__ 
-> ```npm start``` 
-> Run the following command from your terminal. 
-> Starts development server automatically.  
-> Open browser to  [http://localhost:3000](http://localhost:3000)  
-> project. 
+<br>
 
+## Our Services
+SneakerHeadz is dedicated to sell you the best sneaker out there. We want you to have the best sneaker game you could get. If you have a sneaker to resell, we can also sell it here on our website. Just send it by going to our RESELL page and send us the sneaker you want to be posted on our website.
+
+<br>
  
- __Production Build__ 
-> ```npm run build``` 
-> Builds the app for production. 
-> Optimizes the build for the best performance.  
-> Open browser to  [http://localhost:3000](http://localhost:3000)  
-> For more information on [deployments](https://facebook.github.io/create-react-app/docs/deployment). 
+## Brands Included
+As of now, the only brand we offer is the Jordan brand.
 
- 
+<br>
 
- 
+## Pricing
+Prices are based of stockx.com and goat.com
 
- 
+<br>
 
- 
+## 
+
