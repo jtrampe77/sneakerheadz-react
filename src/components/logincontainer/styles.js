@@ -41,11 +41,15 @@ const LoginImage = styled.img`
 const LoginSubmitButton = styled.button`
   background-color:red;
   color:white;
-  padding:0.5rem 1rem;
+  padding:0.5rem 3rem;
   font-weight:bold;
   border-radius:4px;
   border:none;
   box-shadow:0 4px 4px 0 black;
+
+  &:hover{
+    background-color:black;
+  }
 
 `;
 
@@ -54,6 +58,7 @@ const LoginFormInput = styled.input`
 
 const LoginFormLabel = styled.label`
     margin:1rem 0 0 0;
+    
  
 `;
 
@@ -66,7 +71,8 @@ const LoginInputContainer = styled.div`
 
 const ForgotPassword = styled.p`
   color: #0059ff;
-  margin-top:4rem;
+  margin-top:1rem;
+  text-align:center;
 `;
 
 

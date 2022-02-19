@@ -29,6 +29,10 @@ function LoginContainer(){
                   
                         <LoginFormLabel>Password</LoginFormLabel> 
                         <LoginFormInput type="password" required />
+
+                        <Link to='/'>
+                            <ForgotPassword>Forgot Password?</ForgotPassword>
+                        </Link>
                     </LoginInputContainer>
 
                     <div>
@@ -37,9 +41,7 @@ function LoginContainer(){
                    
                   </LoginForm>
 
-            <Link to='/'>
-            <ForgotPassword>Forgot Password?</ForgotPassword>
-            </Link>
+           
             
                   
 
