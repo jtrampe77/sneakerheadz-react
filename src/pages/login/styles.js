@@ -1,27 +1,47 @@
 import styled from "styled-components";
+import loginBg from '../../img/loginbg.png'
 
-const LoginImageContainer= styled.div`
-    display:flex;
+const MainContainer= styled.div`
+    /* display:flex;
     justify-content: space-around;
     gap:5rem;
-`;
-
-const LoginPanel = styled.div`
-    width: 50%;
+    border: 1px solid black; */
     display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
+    justify-content: center;
+    padding:3rem;
+    background-image: url(${loginBg});
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
     height:100vh;
 `;
 
+
+
+const LoginPanel = styled.div`
+ 
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:35%;
+    padding: 5rem;
+    gap: 3rem;
+    text-align:center;
+    border: 1px solid black;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+`;
+
+
+
 const LoginHeader = styled.h2`
-    font-size:4rem;
+    font-size:3rem;
     font-weight:bold;
 `
 
 const LoginTagline = styled.h3`
-    font-size:1.5rem;
+    font-size:1rem;
 
 `;
 
@@ -31,11 +51,14 @@ const LoginForm = styled.form`
 `;
 
 const ImagePanel = styled.div`
-   width:50%;
+ 
 `;
 
 const LoginImage = styled.img`
- 
+    width: ${props => props.width || "100%"};
+    margin: ${props => props.margin || ""};
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 `;
 
 const LoginSubmitButton = styled.button`
@@ -63,10 +86,10 @@ const LoginFormLabel = styled.label`
 `;
 
 const LoginInputContainer = styled.div`
-  display:flex;
+  /* display:flex;
   flex-direction:column;
   text-align:left;
-  margin: 2rem 0;
+  margin: 2rem 0; */
 `;
 
 const ForgotPassword = styled.p`
@@ -77,4 +100,4 @@ const ForgotPassword = styled.p`
 
 
 
-export {LoginImageContainer,LoginPanel,LoginHeader,LoginTagline,LoginForm,ImagePanel,LoginImage,LoginSubmitButton, LoginFormInput, LoginFormLabel,LoginInputContainer,ForgotPassword}
+export {MainContainer,LoginPanel,LoginHeader,LoginTagline,LoginForm,ImagePanel,LoginImage,LoginSubmitButton, LoginFormInput, LoginFormLabel,LoginInputContainer,ForgotPassword}

@@ -6,11 +6,13 @@ const Button = styled.button `
     border-radius: 3px;
     box-shadow: 0 0 3px 1px rgb(220, 220, 220);
     margin: 2rem;
-    padding: 0.25rem 2rem;
-    color: ${props => props.textcolor || "black"};
+    padding: ${props => props.padding || "0.25rem 2rem"};
+    font-weight: ${props => props.fontweight || ""};
+    box-shadow: ${props => props.boxshadow || ""};
+    border-radius: ${props => props.radius || ""};
+    color: ${props => props.color || "black"};
     font-size: ${props => props.size || "1rem"};
-
-  
+ 
 `;
 
 const IconButton = styled.button`

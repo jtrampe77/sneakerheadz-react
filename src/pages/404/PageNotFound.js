@@ -1,11 +1,13 @@
 import React from 'react'
 import {PageNotFoundContainer,PageHeader,PageTagline,BackToHomeButton,PageDiv} from './styles'
 import { Link } from 'react-router-dom'
-
+import {AppBar} from '../../components/appbar'
+import {FootBar} from '../../components/footbar'
 
 function PageNotFound() {
   return (
     <>
+     <AppBar />
     <PageNotFoundContainer>
       <PageDiv>
           <PageHeader>SORRY</PageHeader>
@@ -17,6 +19,7 @@ function PageNotFound() {
       </PageDiv>
     
     </PageNotFoundContainer>
+    <FootBar />
  
     </>
   )
