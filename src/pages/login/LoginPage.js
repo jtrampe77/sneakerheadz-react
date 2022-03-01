@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {MainContainer,LoginPanel,LoginHeader,LoginTagline,LoginForm,LoginImage, ImagePanel, LoginFormLabel,LoginInputContainer,ForgotPassword} from './styles'
+import {MainContainer,LoginPanel,LoginHeader,LoginTagline,LoginForm,LoginImage, LoginInputContainer,ForgotPassword} from './styles'
 import {Input} from '../../ui/forms'
 import { Link, useNavigate } from 'react-router-dom';
 import {Button} from '../../ui/buttons'
