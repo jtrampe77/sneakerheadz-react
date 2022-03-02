@@ -1,10 +1,9 @@
 import React, {useState} from 'react'
-import {MainContainer,LoginPanel,LoginHeader,LoginTagline,LoginForm,LoginImage, LoginInputContainer,ForgotPassword} from './styles'
+import {MainContainer,LoginPanel,LoginHeader,ImagePanel, LoginText,LoginForm,LoginImage, LoginInputContainer,ForgotPassword} from './styles'
 import {Input} from '../../ui/forms'
 import { Link, useNavigate } from 'react-router-dom';
 import {Button} from '../../ui/buttons'
-import sneakersImage from '../../img/LoginPageImg.jpg'
-import logo from '../../img/logo-black.png'
+import logo from '../../img/logo.png'
 
 
 function LoginContainer(props){
@@ -28,10 +27,10 @@ function LoginContainer(props){
             <LoginPanel>
 
               <div>
-              <LoginImage src={logo} alt="Logo" width="20%" margin="0 0 4rem 0" />
+              {/* <LoginImage src={logo} alt="Logo" width="20%" margin="0 0 4rem 0" /> */}
 
-                <LoginHeader>Welcome Back</LoginHeader>
-                <LoginTagline>Access Your Sneakerz</LoginTagline>
+                <LoginHeader>Welcome!</LoginHeader>
+                <LoginText>Login to access your sneakerz</LoginText>
 
                 <LoginForm onSubmit={onHandleSubmit}>
 
@@ -52,7 +51,11 @@ function LoginContainer(props){
 
             </LoginPanel>
 
-            <LoginImage width="35%" src={sneakersImage} />
+            <ImagePanel>
+                <LoginImage src={logo} alt="Logo" width="30%" margin="0 0 2rem 0" />
+                <LoginText color='white'>SneakerHeadz is all about getting rare, limited-only,best of sneakers and reselling them for other sneakerheadz to enjoy.</LoginText>
+            </ImagePanel>
+         
 
             
         </MainContainer>  

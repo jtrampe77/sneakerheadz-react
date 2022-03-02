@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import loginBg from '../../img/loginbg.png'
+import loginImg from '../../img/LoginPageImg.jpg'
 
 const MainContainer= styled.div`
     /* display:flex;
@@ -40,8 +41,10 @@ const LoginHeader = styled.h2`
     font-weight:bold;
 `
 
-const LoginTagline = styled.h3`
+const LoginText = styled.h3`
     font-size:1rem;
+    color: ${props => props.color || "black"};
+    text-align:center;
 
 `;
 
@@ -50,15 +53,12 @@ const LoginForm = styled.form`
 
 `;
 
-const ImagePanel = styled.div`
- 
-`;
+
 
 const LoginImage = styled.img`
     width: ${props => props.width || "100%"};
     margin: ${props => props.margin || ""};
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+
 `;
 
 const LoginSubmitButton = styled.button`
@@ -76,7 +76,18 @@ const LoginSubmitButton = styled.button`
 
 `;
 
-const LoginFormInput = styled.input`
+const ImagePanel = styled.div`
+  background-image:url(${loginImg});
+  width:35%;
+  background-size:cover;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  padding:4rem;
+
 `;
 
 const LoginFormLabel = styled.label`
@@ -100,4 +111,4 @@ const ForgotPassword = styled.p`
 
 
 
-export {MainContainer,LoginPanel,LoginHeader,LoginTagline,LoginForm,ImagePanel,LoginImage,LoginSubmitButton, LoginFormInput, LoginFormLabel,LoginInputContainer,ForgotPassword}
+export {MainContainer,LoginPanel,LoginHeader,LoginText,LoginForm,ImagePanel,LoginImage,LoginSubmitButton, LoginFormLabel,LoginInputContainer,ForgotPassword}
