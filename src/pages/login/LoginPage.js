@@ -30,7 +30,7 @@ function LoginContainer(props){
               {/* <LoginImage src={logo} alt="Logo" width="20%" margin="0 0 4rem 0" /> */}
 
                 <LoginHeader>Welcome!</LoginHeader>
-                <LoginText>Login to access your sneakerz</LoginText>
+                <LoginText>Login to access our sneakerz</LoginText>
 
                 <LoginForm onSubmit={onHandleSubmit}>
 
