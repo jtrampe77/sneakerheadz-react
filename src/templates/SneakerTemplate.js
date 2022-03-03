@@ -1,5 +1,5 @@
 import {ref} from 'firebase/database'
-import {db} from '../libs/firebase/firebaseConfig'
+import {db} from 'libs/firebase/firebaseConfig'
 
 function sneakerTemplate({ sneakerName, key, sneakerPrice, imageUrl, size }) {
 

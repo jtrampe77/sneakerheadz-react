@@ -1,9 +1,15 @@
 import React, {useState} from 'react'
-import {MainContainer,LoginPanel,LoginHeader,ImagePanel, LoginText,LoginForm,LoginImage, LoginInputContainer,ForgotPassword} from './styles'
-import {Input} from '../../ui/forms'
 import { Link, useNavigate } from 'react-router-dom';
-import {Button} from '../../ui/buttons'
-import logo from '../../img/logo.png'
+import {signInWithEmailAndPassword} from 'firebase/auth'
+import {auth} from 'libs/firebase/firebaseConfig'
+import {ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
+import {MainContainer,LoginPanel,LoginHeader,ImagePanel, LoginText,LoginForm,LoginImage, LoginInputContainer,ForgotPassword} from './styles'
+import {Input} from 'ui/forms'
+import {Button} from 'ui/buttons'
+import logo from 'img/logo.png'
 
 
 function LoginContainer(props){
@@ -12,17 +18,39 @@ function LoginContainer(props){
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
+    const notify = (error) => toast.error('Wrong Email / Password',{
+        position: "top-center",
+        autoClose: 1000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        // icon:<BiCommentError/>
+    
+      });
+
     function onHandleSubmit(e){
         e.preventDefault();
-        navigation('dashboard');
-        // console.log(email, password)
+
+        signInWithEmailAndPassword(auth,email,password)
+
+        .then(userCredentials=>{
+            navigation('dashboard');
+        })
+        .catch(error=>{
+            notify(error)
+        })
+       
+        
+        
     }
     
    
     return(
         
         <MainContainer>
-
+            <ToastContainer />
           
             <LoginPanel>
 

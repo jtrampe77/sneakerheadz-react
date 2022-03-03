@@ -15,6 +15,21 @@ const MainContainer= styled.div`
     background-repeat:no-repeat;
     background-position:center;
     height:100vh;
+
+
+    .Toastify__toast {
+    background-color:black;
+    color: white;
+    }
+
+    .Toastify__toast-theme--colored.Toastify__toast--success {
+      background-color: green;
+      color: white;
+    }
+
+
+
+
 `;
 
 
