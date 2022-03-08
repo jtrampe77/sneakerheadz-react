@@ -7,8 +7,16 @@ import {BsFillTelephoneFill} from 'react-icons/bs'
 import {IoIosArrowForward} from 'react-icons/io'
 import {FiLogOut} from 'react-icons/fi'
 import {Link} from 'react-router-dom'
+import {signOut} from 'firebase/auth'
+import {auth} from 'libs/firebase/firebaseConfig'
 
 function SideBar() {
+
+  function onLogoutRequest(e){
+      signOut(auth)
+
+  }
+
   return (
     <SideBarStyles>
 
@@ -42,13 +50,13 @@ function SideBar() {
           <IoIosArrowForward />
         </SideBarItem>
 
-        <Link to="/">
-          <SideBarItem>
+     
+          <SideBarItem onClick={onLogoutRequest}>
             <FiLogOut size="1.5rem"/>
             <SideBarItemName>Logout</SideBarItemName>
             <IoIosArrowForward />
           </SideBarItem>
-        </Link>
+ 
 
 
       </SideBarItems>

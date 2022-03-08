@@ -1,10 +1,10 @@
 import React from 'react'
-import {PanelsStyles, Panel,PanelHeading} from '../panels/styles'
+import {PanelsStyles, Panel} from '../panels/styles'
 
 function Panels() {
   return (
     <>
-    <PanelHeading>Sneakerz Listing</PanelHeading>
+  
 
      <PanelsStyles>
 

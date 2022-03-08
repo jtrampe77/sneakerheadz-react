@@ -1,23 +1,54 @@
-import React from 'react'
-import {StoreFront} from './../../components/storefront'
-import {HeroBanner} from '../../components/herobanner'
+import React, {useState} from 'react'
+
 import {AppBar} from '../../components/appbar'
 import {FootBar} from '../../components/footbar'
+
+import { DashBoardPageStyles } from './styles'
+
+
+import {auth} from 'libs/firebase/firebaseConfig'
+import { onAuthStateChanged } from 'firebase/auth'
+import {useNavigate} from 'react-router-dom'
+import {SideBar} from 'components/sidebar'
 
 
 function DashBoardPage(props) {
 
 
-  
-  return (
-    <>
+  const [isUser, setIsUser] = useState(false)
+  const navigator = useNavigate()
+
+  onAuthStateChanged(auth, (user)=>{
+    if(user){
+        setIsUser(true)
+    }else{
+        setIsUser(false)
+        //login page
+        navigator('/')
+    }
+  })
+
+  if(isUser){
+    return(
+      <>
       <AppBar />
-      <HeroBanner />
-      <StoreFront />
+
+
+      
+      <DashBoardPageStyles>
+      <SideBar/>
+  
+      </DashBoardPageStyles>
+    
       <FootBar />
     </>
-     
-  )
+        
+    )
+  
+  }else{
+    return null
+  }
+
 }
 
 export default DashBoardPage
