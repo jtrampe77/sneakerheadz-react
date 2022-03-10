@@ -1,14 +1,14 @@
 import React from 'react';
-import {SideBarStyles,SideBarItems,SideBarItem,SideBarItemName} from '../sidebar/styles'
-import{AiOutlineHome} from 'react-icons/ai'
+import {SideBarStyles,SideBarItems,SideBarItem,SideBarItemName, SideBarHeader} from '../sidebar/styles'
 import {MdManageAccounts} from 'react-icons/md'
 import {BiInfoCircle} from 'react-icons/bi'
 import {BsFillTelephoneFill} from 'react-icons/bs'
 import {IoIosArrowForward} from 'react-icons/io'
 import {FiLogOut} from 'react-icons/fi'
-import {Link} from 'react-router-dom'
 import {signOut} from 'firebase/auth'
 import {auth} from 'libs/firebase/firebaseConfig'
+import ProductOptions from './ProductOptions';
+import {MdDashboard} from 'react-icons/md'
 
 function SideBar() {
 
@@ -20,30 +20,28 @@ function SideBar() {
   return (
     <SideBarStyles>
 
+      <SideBarHeader>
+        <MdDashboard size="1.75rem" color='red' />
+        <h2>Dashboard</h2>
+      </SideBarHeader>
+
       <SideBarItems>
 
-        <Link to="/dashboard">
-          <SideBarItem>
-            <AiOutlineHome size="1.5rem"/>
-            <SideBarItemName>Home</SideBarItemName>
-            <IoIosArrowForward />
-          </SideBarItem>
-        </Link>
+        <ProductOptions />
 
+      
         <SideBarItem>
           <MdManageAccounts size="1.5rem"/>
           <SideBarItemName>Account</SideBarItemName>
           <IoIosArrowForward />
         </SideBarItem>
 
-        <Link to="/about">
           <SideBarItem>
             <BiInfoCircle size="1.5rem"/>
             <SideBarItemName>About</SideBarItemName>
             <IoIosArrowForward />
           </SideBarItem>
-        </Link>
-
+    
         <SideBarItem>
           <BsFillTelephoneFill size="1.5rem"/>
           <SideBarItemName>Contact</SideBarItemName>

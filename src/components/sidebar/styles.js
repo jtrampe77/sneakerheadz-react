@@ -38,4 +38,17 @@ const SideBarItemName = styled.span`
   margin-right:2rem;
 `
 
-export {SideBarStyles,SideBarItems,SideBarItem, SideBarItemName}
+const SideBarHeader = styled.header`
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-top: 1rem;
+  gap: 0.5rem;
+
+  h2{
+    font-size:1.5rem;
+    font-weight:bold;
+  }
+`;
+
+export {SideBarStyles,SideBarItems,SideBarItem, SideBarItemName, SideBarHeader}

@@ -1,35 +1,29 @@
 import styled from "styled-components";
 
-const PanelsStyles = styled.div`
-
-    margin: 3rem auto;
-
- @media screen and (min-width:900px) {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 3rem;
-        margin: 3rem 0;
- }
+const PanelsStyles = styled.section`
+    flex: 1;
+    box-shadow: 0 0 3px 0 black;
+    border-radius: 3px;
+    margin: 2rem;
 `
 
-const Panel = styled.div`
+const PanelBody = styled.div`
+    margin: ${props => props.margin || "3rem"};
+`
 
-    padding: 4rem 3rem;
-    box-shadow: 0px 0px 4px rgba(255, 0, 0, 0.8), 0 0px 3px #000000;
-    text-align: center;
-    margin-bottom: 3rem;
-
-    @media screen and (min-width:900px) {
-       
+const PanelHeader = styled.header`
+    background-color: darkred;
+    h2{
+        padding: 1rem;
+        border-radius:3px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        color: white;
+        font-weight:bold;
+        border-bottom: 1px solid black;
     }
 `
 
-const PanelHeading = styled.h2`
-    font-size:2rem;
-    font-weight:500;
-    margin-top:1rem;
-`
 
-
-export{PanelsStyles, Panel,PanelHeading}
+export{PanelsStyles, PanelBody ,PanelHeader}
 
