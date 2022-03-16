@@ -1,1 +1,2 @@
-export {Input} from './Input'
+export {Input, Label, TextArea} from './Input'
+
