@@ -6,9 +6,8 @@
  function ProductImageDropBox  ({setProductImage, ...props}){
     const onDrop = useCallback(acceptedFiles => {
         const path = acceptedFiles[0] ;
-         
         setProductImage(URL.createObjectURL(path))
-      }, [])
+      }, [setProductImage])
       const {
         getRootProps,
         getInputProps,

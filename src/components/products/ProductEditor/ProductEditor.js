@@ -4,7 +4,7 @@ import {ProductDataEntryForm} from './../ProductDataEntryForm'
 import {ProductPreview} from './../ProductPreview'
 import {ProductEditorStyles} from './styles'
 
-function ProductEditor ({children, productName, productPrice, productImage, productDescription, handleProductName, handleProductPrice,setProductImage, handleProductDescription, ...props})  {
+function ProductEditor ({children, productName, productPrice, productImage, productDescription, handleProductName, handleProductPrice, setProductImage, handleProductDescription, ...props})  {
   return (
         <ProductEditorStyles  {...props}>
            
