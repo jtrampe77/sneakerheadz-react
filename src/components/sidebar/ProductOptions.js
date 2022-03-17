@@ -6,9 +6,8 @@ import {IoMdAddCircleOutline} from 'react-icons/io'
 
 
 const ProductOptionStyles = styled.ul`
-  margin:3rem 2rem 3rem;
-  padding-bottom: 4rem;
-  border-bottom: 1px solid black;
+  margin:1rem 2rem;
+  /* padding-bottom: 4rem; */
   a{
     color: black;
   }

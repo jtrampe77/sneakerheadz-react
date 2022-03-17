@@ -3,11 +3,9 @@ import styled from "styled-components";
 const SideBarStyles = styled.div`
   
  border-right:1px solid black;
+ /* height: 100vh; */
+ padding-bottom: 5rem;
 
-
- @media screen and (min-width:900px){
-  height: 100vh;
- }
 
 
 `;
@@ -17,7 +15,7 @@ const SideBarItems = styled.ul`
 `;
 
 const SideBarItem = styled.li`
-  padding: 2rem 2rem;
+  padding: 1rem 2rem;
   display:flex;
   align-items:center;
   color: black;
@@ -51,4 +49,11 @@ const SideBarHeader = styled.header`
   }
 `;
 
-export {SideBarStyles,SideBarItems,SideBarItem, SideBarItemName, SideBarHeader}
+
+const SideBarGroup = styled.div`
+  border-bottom: 1px solid black;
+  padding:1rem 0;
+  margin: 1rem 0;
+`;
+
+export {SideBarStyles,SideBarItems,SideBarItem, SideBarItemName, SideBarHeader,SideBarGroup}

@@ -1,6 +1,7 @@
 import React from 'react'
 import {AppBarStyles, AppBarItems, AppBarItem, AppBarDiv, AppBarImg} from './styles'
 import {IoIosNotificationsOutline} from 'react-icons/io'
+import {AiOutlineMail} from 'react-icons/ai'
 import {BsPersonCircle} from 'react-icons/bs'
 import {FiSettings} from 'react-icons/fi'
 import logo from '../../img/logo.png'
@@ -27,6 +28,10 @@ function AppBar(props) {
 
                 <AppBarItem>
                   <Link to="/account"><BsPersonCircle color='white' size="2rem"/></Link>
+                </AppBarItem>
+
+                <AppBarItem>
+                  <Link to="/account"><AiOutlineMail color='white' size="2rem"/></Link>
                 </AppBarItem>
 
                 <AppBarItem>
