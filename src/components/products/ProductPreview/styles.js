@@ -7,6 +7,7 @@ const ProductPreviewStyles  = styled.div`
       align-self:stretch;
       padding:3rem 2rem;
       background-color:#f8fafc;
+      box-shadow: 2px 0 4px 0 black;
 `;
 
 const ProductImage = styled.div`
