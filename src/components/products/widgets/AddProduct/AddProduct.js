@@ -25,6 +25,7 @@ function AddProduct ({children, ...props})  {
     setProductDescription(description)
   }
 
+
   return (
         <AddProductStyles  {...props}>
            <ProductEditor 
@@ -34,8 +35,9 @@ function AddProduct ({children, ...props})  {
            productDescription={productDescription}
            handleProductName={handleProductName} 
            handleProductPrice={handleProductPrice}
+           handleProductDescription={handleProductDescription}
            setProductImage={setProductImage}
-           handleProductDescription={setProductDescription}
+         
            />
 
         </AddProductStyles>
