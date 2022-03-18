@@ -1,11 +1,10 @@
 import React, {useState} from 'react'
 import {PageNotFoundContainer,PageHeader,PageTagline,BackToHomeButton,PageDiv} from './styles'
 import { Link } from 'react-router-dom'
-import {AppBar} from '../../components/appbar'
-import {FootBar} from '../../components/footbar'
 import {auth} from 'libs/firebase/firebaseConfig'
 import { onAuthStateChanged } from 'firebase/auth'
 
+import errorImg from 'img/errorImg.jpg'
 
 function PageNotFound() {
 
@@ -21,23 +20,21 @@ function PageNotFound() {
 
   return (
     <>
-     <AppBar />
+ 
     <PageNotFoundContainer>
+
+      <img src={errorImg} alt="Jordans Hanging" />
       <PageDiv>
-          <PageHeader>SORRY</PageHeader>
-          <PageTagline>Page Not Found</PageTagline>
+          <PageHeader>Hang In There!</PageHeader>
+          <PageTagline>The page your looking for does not exist. Please Go Back.</PageTagline>
 
          {
             isUser? <Link to='/dashboard'><BackToHomeButton>Go Back</BackToHomeButton></Link> : <Link to='/'><BackToHomeButton>Go Back</BackToHomeButton></Link>
-          }
-    
-        
-       
-          
+          }        
       </PageDiv>
     
     </PageNotFoundContainer>
-    <FootBar />
+  
  
     </>
   )

@@ -1,21 +1,33 @@
 import styled from "styled-components";
+import loginBg from '../../img/loginbg.png'
 
 const PageNotFoundContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height:80vh;
+  background-image: url(${loginBg});
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    height:100vh;
+    
+
+    img{
+      width:30%;
+      height:auto;
+      margin:3rem;
+    }
 `;
 
 const PageHeader = styled.h1`
-  font-size: 15rem;
+  font-size: 3rem;
   text-align: center;
   color: red;
   font-weight:bold;
 `;
 
 const PageTagline = styled.h2`
-    font-size:3rem;
+    font-size:1rem;
     text-align: center;
 `;
 
