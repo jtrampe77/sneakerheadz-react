@@ -20,7 +20,7 @@ const PageNotFoundContainer = styled.div`
 `;
 
 const PageHeader = styled.h1`
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
   color: red;
   font-weight:bold;

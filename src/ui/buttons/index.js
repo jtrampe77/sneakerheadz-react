@@ -20,4 +20,13 @@ const IconButton = styled.button`
   background-color:transparent;
 `;
 
-export {Button, IconButton}
+const SubmitButton = styled.button`
+  width:100%;
+  padding:0.75rem 0;
+  margin:1.125rem 0 0 0;
+  background-color:red;
+  color: white;
+  font-weight: bold;
+`;
+
+export {Button, IconButton, SubmitButton}
