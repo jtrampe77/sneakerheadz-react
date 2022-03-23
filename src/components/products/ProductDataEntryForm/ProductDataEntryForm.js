@@ -9,24 +9,24 @@ function ProductDataEntryForm ({children, handleProductName, handleProductPrice,
   return (
         <ProductDataEntryFormStyles  {...props} onSubmit={handleSubmit}>
            <ProductImage>
-              <Label>Product Image</Label>
+              <Label>Sneaker Image</Label>
               <ProductImageDropBox setProductImage={setProductImage}/>
            </ProductImage>
 
           <fieldset>
            <ProductName>
-              <Label>Product Name</Label>
+              <Label>Sneaker Name</Label>
               <Input onChange={(e)=>handleProductName(e.target.value.trim())} maxLength={30} />
            </ProductName>
 
            <ProductPrice>
-              <Label>Product Price</Label>
+              <Label>Sneaker Price</Label>
               <Input onChange={(e)=>handleProductPrice(e.target.value.trim())} maxLength={8}/>
            </ProductPrice>
            </fieldset>
 
            <ProductDescription>
-              <Label>Product Description</Label>
+              <Label>Sneaker Description</Label>
               <TextArea onChange={(e)=>handleProductDescription(e.target.value.trim())} maxLength={50} rows={6}/>
            </ProductDescription>
 

@@ -27,7 +27,7 @@
       
         <ProductImageDropBoxStyles {...getRootProps({isFocused, isDragAccept, isDragReject})}>
           <input {...getInputProps()} onChange={workingThing} />
-          <p>Product Image Upload</p>
+          <p>Upload Sneaker Image</p>
         </ProductImageDropBoxStyles>
        
        

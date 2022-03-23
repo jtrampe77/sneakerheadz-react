@@ -6,8 +6,17 @@ const AddProductStyles  = styled.div`
       /* styles */
       h2{
           font-size:1.75rem;
-          color:#374151;
+          color:black;
+         
       }
 `;
 
-export {AddProductStyles}
+const AddProductHeader = styled.h1`
+     text-align:center;
+     margin: 3rem 0;
+     font-size:2rem;
+     font-weight: bold;
+     color:#D25555;
+`;
+
+export {AddProductStyles,AddProductHeader}

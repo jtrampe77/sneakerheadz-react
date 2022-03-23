@@ -24,9 +24,13 @@ const SubmitButton = styled.button`
   width:100%;
   padding:0.75rem 0;
   margin:1.125rem 0 0 0;
-  background-color:red;
+  background-color:black;
   color: white;
   font-weight: bold;
+
+  &:hover{
+    background-color:red;
+  }
 `;
 
 export {Button, IconButton, SubmitButton}
