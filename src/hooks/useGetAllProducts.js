@@ -2,7 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import {ref as dataRef, get} from 'firebase/database';
 import {db} from 'libs/firebase/firebaseConfig';
-import { SneakerTemplate } from 'templates/SneakerTemplate';
+// import { SneakerTemplate } from 'templates/SneakerTemplate';
 
 function UseGetAllProducts(){
 
@@ -14,13 +14,17 @@ function UseGetAllProducts(){
             const sneakerRef = dataRef(db, 'products/');
             const sneakerSnapShot = await get(sneakerRef);
             const data = sneakerSnapShot.val();
-            
             setSneakerData(data);       
+
+
             console.log(data)
+
             
         }
         loadSneakerData()
       }, [])
+
+      console.log(sneakerData)
 
       return (
           <>
