@@ -1,5 +1,8 @@
+import { UseGetAllProducts } from 'hooks/useGetAllProducts'
 import React from 'react'
 import {PanelsStyles, PanelHeader, PanelBody} from './styles'
+
+
 
 function AllProductsPanel({title, ...props}) {
   return (
@@ -10,6 +13,8 @@ function AllProductsPanel({title, ...props}) {
         </PanelHeader>
 
         <PanelBody>
+
+            <UseGetAllProducts />
 
         </PanelBody>
       </PanelsStyles>

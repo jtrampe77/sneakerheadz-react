@@ -13,6 +13,7 @@ import {Outlet, useNavigate} from 'react-router-dom'
 import {SideBar} from 'components/sidebar'
 
 
+
 function DashBoardPage(props) {
 
 
@@ -33,12 +34,11 @@ function DashBoardPage(props) {
     return(
       <>
       <AppBar />
-
-
-      
+     
       <DashBoardPageStyles>
       <SideBar/>
 
+       
       <Outlet />
 
       </DashBoardPageStyles>
