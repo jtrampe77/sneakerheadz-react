@@ -1,39 +1,23 @@
-import React from 'react';
 import { useState, useEffect } from 'react';
-import {ref as dataRef, get} from 'firebase/database';
+import {ref, get} from 'firebase/database';
 import {db} from 'libs/firebase/firebaseConfig';
-// import { SneakerTemplate } from 'templates/SneakerTemplate';
 
-function UseGetAllProducts(){
 
-    const [sneakerData, setSneakerData] = useState([])
-    
+function useGetAllProducts(){
+
+    const [productData,setProductData] = useState(null)
 
     useEffect(()=>{
-        async function loadSneakerData(){
-            const sneakerRef = dataRef(db, 'products/');
-            const sneakerSnapShot = await get(sneakerRef);
-            const data = sneakerSnapShot.val();
-            setSneakerData(data);       
+          async function getProductData(){
+            const productRef = ref(db, 'products')
+            const productSnapshot = await get(productRef)
+            setProductData(Object.values(productSnapshot.val()))
+  
+          }
+          getProductData()
+    },[])
 
-
-            console.log(data)
-
-            
-        }
-        loadSneakerData()
-      }, [])
-
-      console.log(sneakerData)
-
-      return (
-          <>
-            {/* {
-                sneakerData.map(({sneakerName, key, sneakerPrice, imageUrl, size})=> <SneakerTemplate sneakerName={sneakerName} key={key} sneakerPrice={sneakerPrice} imageUrl={imageUrl} size={size} />)
-            } */}
-          </>
-      )
-
+    return productData
 
     
 
@@ -41,7 +25,7 @@ function UseGetAllProducts(){
 
 
 
-export {UseGetAllProducts}
+export {useGetAllProducts}
 
 
 
