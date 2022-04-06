@@ -42,18 +42,19 @@ function ProductCard ({product, ...props})  {
   const {productName, uid, productPrice, imageUrl, productSize, productDescription} = {...product}
   return (
         <ProductCardStyles>
-          <div className="card" data-key={uid}>
-            <img src={imageUrl} alt={productName} />
-            <h3>{productName}</h3>
-            <p>Size (US MENS): {productSize}</p>
-            <p>{productDescription}</p>
-            <h4>${productPrice}</h4>
-            <div className="sneakerButtons">
-                <button id="editSneaker" className="card-btn" href="#" data-key={uid}>EDIT</button>
-                <button id="deleteSneaker" className="card-btn" href="#" data-key={uid}>DELETE</button>
+          <div>
+            <div className="card" data-key={uid}>
+              <img src={imageUrl} alt={productName} />
+              <h3>{productName}</h3>
+              <p className='productSize'>Size: {productSize}</p>
+              <h4>${productPrice}</h4>
+              <p className='productDescription'>{productDescription}</p>
+              <div className="sneakerButtons">
+                  <button id="editSneaker" className="card-btn" href="#" data-key={uid}>EDIT</button>
+                  <button id="deleteSneaker" className="card-btn" href="#" data-key={uid}>DELETE</button>
+              </div>
             </div>
           </div>
-
         </ProductCardStyles>
   )
 }

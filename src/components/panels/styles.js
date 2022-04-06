@@ -9,6 +9,11 @@ const PanelsStyles = styled.section`
 
 const PanelBody = styled.div`
     margin: ${props => props.margin || "3rem"};
+    /* Product Cards container styles */
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+    gap:1rem;
 `
 
 const PanelHeader = styled.header`
